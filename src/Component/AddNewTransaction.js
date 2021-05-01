@@ -48,6 +48,8 @@ export const AddNewTransaction = () => {
                 <div className="from-control">
                     <label htmlFor="transactionAmount" >
                         Amount
+                        <br/>
+                        <span>(negative - expense, positive - income)</span>
                         </label>
                     <input type="number"
                         placeholder="Enter Transaction Amount"
@@ -59,6 +61,7 @@ export const AddNewTransaction = () => {
                         value={newAmount}
 
                     />
+
                 </div>
 
                 <button type="submit" className="btn">Add Transaction</button>
