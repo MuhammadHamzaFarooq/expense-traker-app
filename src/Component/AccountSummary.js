@@ -7,7 +7,7 @@ import { TransactionContext } from "../Context/GlobalState";
 export const AccountSummary = () => {
 
     let { getExpanse,getIncome,transactions} = useContext(TransactionContext);
-    const sign = transactions.amount > 0 ? '+' : '-';
+
 
     return (
              
@@ -15,14 +15,14 @@ export const AccountSummary = () => {
                 <div>
                     <h4>Income</h4>
                     <p className="money plus">
-                       {sign}${Math.abs(getIncome(transactions))}
+                       +${Math.abs(getIncome(transactions))}
                     </p>
                 </div>
 
                 <div>
                     <h4>Exapnse</h4>
                     <p className="money minus">
-                        {sign}${Math.abs(getExpanse(transactions))}
+                        -${Math.abs(getExpanse(transactions))}
                     </p>
                 </div>
             </div>
