@@ -20,7 +20,7 @@ export const AccountSummary = () => {
                 </div>
 
                 <div>
-                    <h4>Exapnse</h4>
+                    <h4>Expense</h4>
                     <p className="money minus">
                         -${Math.abs(getExpanse(transactions))}
                     </p>
